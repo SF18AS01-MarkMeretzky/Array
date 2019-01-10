@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             count = i;
         } else {
             //The user just typed one of the numbers in the array.
-            if i <= 0 || i > 1000 {
+            if i < 0 || i > 1000 {
                 errorLabel.text = "Each number must be in range 0 to 1000.";
                 errorLabel.isHidden = false;
                 okButton.isHidden = false;
